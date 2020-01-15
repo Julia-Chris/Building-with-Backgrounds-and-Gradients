@@ -154,16 +154,48 @@ table {
   flex-wrap: nowrap;
   height: 540px;
   width: 1440px;
-  background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg);
-  
-}
-.nav-menu {
-  font: normal;
-  font-size: 12px;
-  display: inline-block;
-  font-style: normal;
-  color: rgb(red, green, blue);
-  margin: 3px 0px;
-  
+  margin: 0 auto;
+  background-size: cover;
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  /* background-image: url("https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg"); */
+
+  background-image: url(../assets/images/couple-hiking.jpg);
+
 
 }
+/* navigator */
+nav-bar {
+  margin-top: 60px;
+}
+
+nav-bar .nav-menu {
+  max-width: 980px;
+  height: 34px;
+  margin: auto;
+  font-size: 12px;
+  font-weight: 200;
+  padding-left: 0;
+  border: 1px solid darkgrey;
+  background: linear-gradient(
+    to bottom
+    rgb(134, 134, 134) 5%;
+    rgb(128, 128, 128) 50%;
+    rgb(107, 107, 107) 51%;
+    #636363 8%;
+    rgb(121, 121, 121) 94%;
+    );
+    box-shadow: 1px 1px 3px #565656;
+    display: flex;
+    justify-content: center;
+
+    /* header */
+.header-text {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0;
+}
+    
+  
+
+
