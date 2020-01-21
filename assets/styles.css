@@ -88,7 +88,9 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
+
   /* font: inherit; */
+
   vertical-align: baseline;
 }
 
@@ -107,9 +109,9 @@ section {
   display: block;
 }
 
-body {
+/* body {
   line-height: 1;
-}
+} */
 
 ol,
 ul {
@@ -140,12 +142,11 @@ body {
   min-width: 1024px;
   max-height: 1472px;
   position: relative;
-  font: normal normal normal 12px/18px "Lucida Grande",
-  "Lucida Sans Unicode",
-  Helvetica, Arial, Verdana,Sans-serif;
-  color: rgb ( 51, 51, 51);
+  font: normal normal normal 12px/18px "Lucida Grande", "Lucida Sans Unicode",
+    Helvetica, Arial, Verdana, Sans-serif;
+  color: rgb (51, 51, 51);
 }
- 
+
 /* Main content, wrapper */
 .main-wrapper {
   display: flex;
@@ -159,7 +160,7 @@ body {
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-image: url(../assets/images/couple-hiking.jpg);
-  /* background-color: transparent; */
+  background-color: transparent;
 }
 
 /* Nav-bar */
@@ -180,22 +181,19 @@ body {
     rgb(82, 82, 82) 51%,
     rgb(100, 105, 101) 100%
   );
-border-top-left-radius: 4px 4px;
-border-top-right-radius: 4px 4px;
-border-bottom-right-radius: 4px 4px;
-border-bottom-left-radius: 4px 4px;
+  border-top-left-radius: 4px 4px;
+  border-top-right-radius: 4px 4px;
+  border-bottom-right-radius: 4px 4px;
+  border-bottom-left-radius: 4px 4px;
 }
 
-nav-bar ul {
-
-
-    /* header */
+/* header */
 .header-text {
   display: flex;
   flex-direction: column;
   padding: 0 0;
 }
-  
+
 .nav-bar ul {
   background-color: transparent;
   margin: 0 auto 0 auto;
@@ -211,7 +209,335 @@ nav-bar ul {
   border-width: 0 1px 0 0;
   border-style: solid;
   border-color: rgb(68, 68, 68);
+  z-index: 9999;
 }
 
+.magnifier-box {
+  position: absolute;
+}
 
+.magnifier-box span {
+  position: absolute;
+  width: 15px;
+  height: 14px;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGJhc2VQcm9maWxlPSJmdWxsIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWxuczpldj0iaHR0cDovL3d3dy53My5vcmcvMjAwMS94bWwtZXZlbnRzIj4KPGcgZmlsbC1vcGFjaXR5PSIuNSI+Cgk8cG9seWdvbiBwb2ludHM9IjkuMjA3LDcuMTI2IDcuNzkzLDguNTQxIDExLjc5MywxMi41NDEgMTMuMjA3LDExLjEyNiIgLz4KCTxwYXRoIGQ9Ik01LjkxNywzYzEuNjA4LDAsMi45MTcsMS4zMDgsMi45MTcsMi45MTdTNy41MjUsOC44MzMsNS45MTcsOC44MzNTMyw3LjUyNSwzLDUuOTE3UzQuMzA4LDMsNS45MTcsMyBNNS45MTcsMQoJCUMzLjIwMSwxLDEsMy4yMDEsMSw1LjkxN3MyLjIwMSw0LjkxNyw0LjkxNyw0LjkxN3M0LjkxNy0yLjIwMSw0LjkxNy00LjkxN0MxMC44MzMsMy4yMDEsOC42MzIsMSw1LjkxNywxTDUuOTE3LDF6IiAvPgo8L2c+CjxnPgoJPHBvbHlnb24gZmlsbD0iI2ZmZiIgcG9pbnRzPSI5LjIwNyw2LjEyNiA3Ljc5Myw3LjU0MSAxMS43OTMsMTEuNTQxIDEzLjIwNywxMC4xMjYiIC8+Cgk8cGF0aCBmaWxsPSIjZmZmIiBkPSJNNS45MTcsMmMxLjYwOCwwLDIuOTE3LDEuMzA4LDIuOTE3LDIuOTE3UzcuNTI1LDcuODMzLDUuOTE3LDcuODMzUzMsNi41MjUsMyw0LjkxN1M0LjMwOCwyLDUuOTE3LDIKCQkgTTUuOTE3LDBDMy4yMDEsMCwxLDIuMjAxLDEsNC45MTdzMi4yMDEsNC45MTcsNC45MTcsNC45MTdzNC45MTctMi4yMDEsNC45MTctNC45MTdDMTAuODMzLDIuMjAxLDguNjMyLDAsNS45MTcsMEw1LjkxNywweiIgLz4KPC9nPgo8L3N2Zz4K");
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  bottom: 2px;
+  left: 5px;
+}
 
+/* nav-bar icons */
+
+.nav-logo a span {
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  margin: 3px auto;
+}
+
+.nav-store a span {
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+  background-image: url();
+  background-position: 50% -30px;
+  background-repeat: no-repeat;
+  margin: 3px auto;
+}
+
+.nav-mac a span {
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+  background-image: url();
+  background-position: 50% -60px;
+  background-repeat: no-repeat;
+  margin: 3px auto;
+}
+
+.nav-ipod a span {
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+  background-image: url();
+  background-position: 50% -90px;
+  background-repeat: no-repeat;
+  margin: 3px auto;
+}
+
+.nav-iphone a span {
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+  background-image: url();
+  background-position: 50% -120px;
+  background-repeat: no-repeat;
+  margin: 3px auto;
+}
+
+.nav-ipad a span {
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+  background-image: url();
+  background-position: 50% -150px;
+  background-repeat: no-repeat;
+  margin: 3px auto;
+}
+
+.nav-itunes a span {
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+  background-image: url();
+  background-position: 50% -180px;
+  background-repeat: no-repeat;
+  margin: 3px auto;
+}
+
+.nav-support a span {
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+  background-image: url();
+  background-position: 50% -210px;
+  background-repeat: no-repeat;
+  margin: 3px auto;
+}
+
+/* search box */
+
+.search-menu {
+  background-color: transparent;
+  padding: 8px 13px;
+  z-index: 9999;
+
+  /* align it with nav bar total width */
+  flex-basis: 109px;
+}
+
+.search-menu form {
+  display: block;
+  color: rgb(255, 255, 255);
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.0976562);
+  border-top-left-radius: 12px 12px;
+  border-top-right-radius: 12px 12px;
+  border-bottom-right-radius: 12px 12px;
+  border-bottom-left-radius: 12px 12px;
+  box-shadow: rgba(0, 0, 0, 0.597656) 0 2px 1px inset,
+    rgba(255, 255, 255, 0.199219) 0 1px 0;
+  z-index: 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.398438) 0 -1px 0,
+    rgba(255, 255, 255, 0.199219) 0 1px 0;
+  border-width: 0;
+  border-style: none;
+  margin: 1px 0 0;
+  padding: 0;
+  border-color: white;
+}
+
+.search-menu form input {
+  color: #fff;
+  background-color: transparent;
+  width: 100%;
+  height: 19px;
+  background-image: none;
+  border-top-left-radius: 12px 12px;
+  border-top-right-radius: 12px 12px;
+  border-bottom-right-radius: 12px 12px;
+  border-bottom-left-radius: 12px 12px;
+
+  /* keeps search box within nav bar without overflow */
+  box-sizing: border-box;
+  margin: 0 0 -1px;
+  padding: 2px 18px 1px 22px;
+  border: 0;
+  border-width: 0;
+  border-color: #fff;
+  cursor: text;
+  font: 400 11px system-ui;
+}
+
+/* header */
+
+.header-text {
+  margin: 28px 0 0;
+  padding: 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header div img {
+  height: 64px;
+  width: 980px;
+}
+
+header h1 {
+  margin: 0 0 -9px;
+  padding: 0;
+}
+
+header h1 a img {
+  height: 104px;
+  width: 980px;
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  border-width: 0;
+  border-style: none;
+  border-color: white;
+}
+
+header h2 {
+  margin: 0 0 27px;
+  padding: 0;
+}
+
+header h2 a img {
+  height: 82px;
+  width: 980px;
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  border-width: 0;
+  border-style: none;
+  border-color: white;
+}
+
+header div {
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 31px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Asides */
+
+aside {
+  margin-top: 157px;
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 24.85%;
+}
+
+.iphone5s a span {
+  display: block;
+  height: 200px;
+  background-color: transparent;
+  background-image: url(../img/iphone5S.jpg);
+  background-position: -52px 0;
+}
+
+.iphone5c a span {
+  display: block;
+  height: 200px;
+  background-color: transparent;
+  background-image: url(../img/iphone5C.jpg);
+  background-position: -52px 0;
+}
+
+.happy a span {
+  display: block;
+  height: 200px;
+  background-color: transparent;
+  background-image: url(../img/happybirthday.jpg);
+  background-position: -52px 0;
+}
+
+.supplier a span {
+  display: block;
+  height: 200px;
+  background-color: transparent;
+  background-image: url(../img/supplier.jpg);
+  background-position: -52px 0;
+}
+
+/* footer */
+.bottom-nav {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.bottom-nav-left {
+  display: flex;
+  text-align: left;
+  margin: 0;
+  padding: 1.5em 0 0;
+  color: rgb(110, 110, 110);
+  font-size: 0.8334em;
+  line-height: 1.2;
+}
+
+.bottom-nav div {
+  flex-basis: 50%;
+}
+
+.bottom-nav ul {
+  flex-basis: 48%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-nav ul li a,
+.bottom-nav div a {
+  color: rgb(0, 136, 204);
+  text-decoration: none;
+  align-content: center;
+}
+
+.shop-text a {
+  padding: 0 4px;
+}
+
+#flag {
+  position: absolute;
+  top: 12px;
+  left: 968px;
+}
+
+.bottom-nav-right li {
+  border-color: rgb(204, 204, 204);
+  border-width: medium 1px medium medium;
+  border-style: none solid none none;
+  padding-right: 6px;
+}
+
+.footer-text ul {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#privacy {
+  border-left-color: rgb(204, 204, 204);
+  border-width: medium medium medium 1px;
+  border-style: none none none solid;
+  margin: 0 0 0 0.6em;
+  padding: 0 0 0 0.6em;
+}
