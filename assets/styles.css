@@ -142,8 +142,8 @@ body {
   min-width: 1024px;
   max-height: 1472px;
   position: relative;
-  font-family: normal normal normal 12px/18px "Lucida Grande",
-    "Lucida Sans Unicode", Helvetica, Arial, Verdana, Sans-serif;
+  font-family: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica,
+    Arial, Verdana, sans-serif;
   color: rgb (51, 51, 51);
 }
 
@@ -152,15 +152,24 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  height: 540px;
-  width: 1024px;
+  max-height: 540px;
+  width: 1440px;
   margin: 0 auto;
   z-index: 1;
   background-size: cover;
-  background-position: 50% 100%;
+  background-position: 0% 100%;
   background-repeat: no-repeat;
   background-image: url(../assets/images/couple-hiking.jpg);
+
+  /* background-color: transparent; */
+}
+
+.place-holder {
+  display: block;
   background-color: transparent;
+  width: 1024px;
+  height: 65px;
+  margin-bottom: 82px;
 }
 
 /* Nav-bar */
@@ -207,25 +216,31 @@ body {
 
 /* nav-bar icons */
 
-.nav-logo a {
+.nav-logo {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/apple-icons.png);
+  height: 30px;
+  width: 50px;
+  margin: 0 auto;
+}
+
+.nav-logo .element {
   display: block;
   width: 100%;
   height: 30px;
-  background-color: transparent;
-  background-image: url(../assets/images/apple.png.svg);
+  background-color: transparent; 
+  fill: rgb(204, 204, 204);
   background-position: 50% 0;
   background-repeat: no-repeat;
   margin: 3px auto;
 }
 
+
 .nav-store a {
   display: block;
-  width: 100%;
-  height: 30px;
-  background-color: transparent;
+  width: 100%
   background-position: 50% -30px;
-  background-repeat: no-repeat;
-  margin: 3px auto;
 }
 
 .nav-mac a {
@@ -363,7 +378,7 @@ body {
 }
 
 /* header */
-/* not aligning properly */
+
 .header-text {
   margin: 28px 0 0;
   padding: 0 0;
@@ -374,6 +389,9 @@ body {
 header h1 {
   margin: 0 0 -9px;
   padding: 0;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: bold;
 }
 
 header div img {
@@ -396,6 +414,9 @@ header h1 a img {
 header h2 {
   margin: 0 0 27px;
   padding: 0;
+  font-size: 16px;
+  line-height: 18px;
+  font-style: normal;
 }
 
 header h2 a img {
@@ -445,7 +466,7 @@ aside {
   display: block;
   height: auto;
   max-width: 25%;
-  width: 100%
+  width: 100%;
   background-color: transparent;
   background-image: url(../img/iphone5C.jpg);
   background-position: -52px 0;
@@ -472,6 +493,12 @@ aside {
 }
 
 /* footer */
+
+/* footer {
+  max-width: 100%;
+  min-width: 100%;
+  height: auto; */
+}
 .bottom-nav {
   position: relative;
   display: flex;
@@ -481,13 +508,22 @@ aside {
   margin-right: auto;
   margin-top: 10px;
   margin-bottom: 30px;
+  height: auto;
+  max-width: 100%;
+  min-width: 100%;
 }
 
 .bottom-nav div {
-  flex-basis: 50%;
+  /* flex-basis: 50%; */
+  width: 45%;
+  float: left;
+  clear: both;
+  text-align: left;
+  display: inline;
+  height: auto;
 }
 
-.bottom-left {
+.bottom {
   display: flex;
   text-align: left;
   margin: 0;
@@ -497,7 +533,7 @@ aside {
   line-height: 1.2;
 }
 
-.bottom-right li {
+.footer-menu li {
   border-color: rgb(204, 204, 204);
   border-width: medium 1px medium medium;
   border-style: none solid none none;
@@ -505,17 +541,21 @@ aside {
 }
 
 .bottom-nav ul {
-  flex-basis: 48%;
   display: flex;
   justify-content: space-between;
+  float: right;
+  width: 51%;
+  color: #0088cc;
 }
 
 .shop-text a {
   padding: 0 4px;
+  line-height: 1.2;
+  color: #0088cc;
 }
 
 .bottom-nav div a .bottom-nav ul li a {
-  color: rgb(0, 136, 204);
+  color: rgb(0, 136, 204); 
   text-decoration: none;
   align-content: center;
 }
@@ -524,9 +564,11 @@ aside {
   position: absolute;
   top: 12px;
   left: 968px;
+  height: 16px;
+  width: 16px;
 }
 
-.footer-text ul {
+.bottom ul {
   display: flex;
   justify-content: flex-start;
 }
@@ -537,4 +579,6 @@ aside {
   border-style: none none none solid;
   margin: 0 0 0 0.6em;
   padding: 0 0 0 0.6em;
+  display: inline-block;
+  line-height: 1.2;
 }
