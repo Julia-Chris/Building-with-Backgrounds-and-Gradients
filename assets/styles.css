@@ -144,9 +144,7 @@ body {
   position: relative;
   font-family: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica,
     Arial, Verdana, sans-serif;
-  /* color: rgb (51, 51, 51); */
 }
-
 /* Main wrapper */
 .main-wrapper {
   display: flex;
@@ -160,8 +158,6 @@ body {
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-image: url(../assets/images/couple-hiking.jpg);
-
-  /* background-color: transparent; */
 }
 
 .place-holder {
@@ -187,16 +183,14 @@ body {
     rgb(105, 105, 105) 11%,
     rgb(100, 100, 100) 50%,
     rgb(82, 82, 82) 51%,
-    rgb(100, 105, 101) 100% 
+    rgb(100, 105, 101) 100%
   );
   border-radius: 4px;
   position: relative;
-  
 }
 
 .nav-bar ul {
   background-color: transparent;
-  /* margin: 0 auto 0 auto; */
   padding: 0;
   width: 845px;
   display: flex;
@@ -215,14 +209,14 @@ body {
   box-sizing: border-box;
   cursor: pointer;
   line-height: 36px;
-  /* margin: 1px auto; */
+  margin: 1px auto;
   text-align: center;
   border-right: 1px;
 }
 
 /* nav-bar icons */
 
-.nav-menu li:hover{ 
+.nav-menu li:hover {
   background-color: gray;
 }
 
@@ -251,7 +245,6 @@ body {
   background-position: 50% -60px;
   text-decoration-line: none;
   color: #fff;
-  
 }
 
 .nav-ipod a {
@@ -399,7 +392,7 @@ header h2 {
   line-height: 18px;
   font-style: normal;
   text-decoration: none;
-  font-family: 'Lato', Helvetica,sans-serif;
+  font-family: "Lato", Helvetica, sans-serif;
 }
 
 header h2 a img {
@@ -430,10 +423,6 @@ aside {
   display: flex;
   justify-content: space-between;
 }
-
-/* img {
-  flex-basis: 24.85%;
-} */
 
 .iphone5s {
   display: block;
@@ -475,13 +464,6 @@ aside {
   background-position: -52px 0;
 }
 
-/* footer */
-
-/* footer {
-  max-width: 100%;
-  min-width: 100%;
-  height: auto; */
-}
 .bottom-nav {
   position: relative;
   display: flex;
@@ -489,11 +471,6 @@ aside {
   width: 980px;
   margin: 0 auto;
   padding: 5em 30px 7em;
-  /* margin-top: 10px;
-  margin-bottom: 30px; */
-  height: auto;
-  /* max-width: 100%;
-  min-width: 100%; */
 }
 
 a {
@@ -501,7 +478,6 @@ a {
 }
 
 .bottom-nav div {
-  /* flex-basis: 50%; */
   width: 45%;
   float: left;
   clear: both;
@@ -524,17 +500,21 @@ a {
   color: #0088cc;
 }
 
+.footer-menu {
+  padding-right: 70px;
+}
 .footer-menu li {
   border-color: rgb(204, 204, 204);
-  border-width: medium 1px medium medium; 
+  border-width: medium 1px medium medium;
   border-right: 1px;
-  padding-right: 70px;
+  margin-right: 70px;
   font-size: 11px;
   float: right;
   text-align: right;
   padding-top: 1.5px;
   display: inline;
   margin: 0px;
+  clear: both;
 }
 
 .bottom-nav ul {
@@ -557,15 +537,13 @@ a {
 }
 
 .bottom-nav div a .bottom-nav ul li a {
-  color: rgb(0, 136, 204); 
+  color: rgb(0, 136, 204);
   text-decoration: none;
   align-content: center;
 }
 
 #flag {
   position: relative;
-  /* top: 12px;
-  left: 968px; */
   height: 16px;
   width: 16px;
 }
@@ -582,12 +560,12 @@ a {
 }
 
 .copyright {
-text-align: left;
-font-size: .8334em;
-color: #6e6e6e;
-padding-left: 70px;
-font-size: 11px;
-line-height: 1;
+  text-align: left;
+  font-size: 0.8334em;
+  color: #6e6e6e;
+  padding-left: 70px;
+  font-size: 11px;
+  line-height: 1;
 }
 
 .copyright a {
