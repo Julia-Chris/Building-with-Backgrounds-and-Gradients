@@ -8,7 +8,6 @@ body {
   min-width: 1024px;
   max-height: 1472px;
   position: relative;
-  font-size: 18px;
   line-height: 1;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -95,7 +94,6 @@ ul {
 .nav-logo {
   background-color: transparent;
   background-repeat: no-repeat;
-  height: 34px;
   margin: 3px auto;
   overflow: hidden;
 }
@@ -103,6 +101,7 @@ ul {
 .apple-logo {
   margin-right: 30px;
   transform: translate(-25px, 0);
+  margin-top: 4px;
 }
 
 .nav-logo .element {
@@ -121,42 +120,49 @@ footer a {
   background-position: 50% -30px;
   text-decoration-line: none;
   color: #fff;
+  font-size: 13px;
 }
 
 .nav-mac a {
   background-position: 50% -60px;
   text-decoration-line: none;
   color: #fff;
+  font-size: 13px;
 }
 
 .nav-ipod a {
   background-position: 50% -90px;
   text-decoration-line: none;
   color: #fff;
+  font-size: 13px;
 }
 
 .nav-iphone a {
   background-position: 50% -120px;
   text-decoration-line: none;
   color: #fff;
+  font-size: 13px;
 }
 
 .nav-ipad a {
   background-position: 50% -150px;
   text-decoration-line: none;
   color: #fff;
+  font-size: 13px;
 }
 
 .nav-itunes a {
   background-position: 50% -180px;
   text-decoration-line: none;
   color: #fff;
+  font-size: 13px;
 }
 
 .nav-support a {
   background-position: 50% -210px;
   text-decoration-line: none;
   color: #fff;
+  font-size: 13px;
 }
 
 .search-menu {
