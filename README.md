@@ -1,6 +1,7 @@
 # Building-with-Backgrounds-and-Gradients
-Cloning Apple.com page
-It is the fourth project in HTML/CSS Microverse Min curriculum
+Cloning Apple.com page.
+It is the fourth project in HTML/CSS Microverse Main curriculum course. The main objective is to clone an old Apple website using back-ground and gradients.
+
 Project Features
 The project has been broken down into four major parts:
 
