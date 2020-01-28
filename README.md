@@ -33,23 +33,26 @@ Getting Started
 To get a local copy up and running follow these simple example steps.
 
 Setup
-Clone into your local machine from terminal.
-Open using text editor of your choice.
+Clone into your local machine from terminal and open using text editor of your choice.
+
 Authors
-👤 Author1
 
 Github: @githubhandle
+
 Twitter: @twitterhandle
+
 Linkedin: linkedin
-🤝 Contributing
+
+Contributing
+
 Contributions, issues and feature requests are welcome!
 
 Feel free to check the issues page.
 
 Show your support
+
 Give a ⭐️ if you like this project!
 
 Acknowledgments
+
 The Labradors
-📝 License
-This project is MIT licensed.
