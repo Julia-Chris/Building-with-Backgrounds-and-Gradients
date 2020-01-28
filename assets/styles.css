@@ -1,147 +1,19 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+* {
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
-
-  /* font: inherit; */
-
-  vertical-align: baseline;
+  box-sizing: border-box;
 }
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-/* body {
-  line-height: 1;
-} */
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote::before,
-blockquote::after,
-q::before,
-q::after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 body {
   min-width: 1024px;
   max-height: 1472px;
   position: relative;
   font-size: 18px;
+  line-height: 1;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ul {
+  list-style: none;
 }
 
 .main-wrapper {
@@ -210,19 +82,6 @@ body {
   text-align: center;
   border-right: 1px;
 }
-/* 
-.footer-menu li {
-  border-color: rgb(204, 204, 204);
-  border-width: medium 1px medium medium;
-  border-right: 1px;
-  margin-right: 70px;
-  font-size: 11px;
-  float: right;
-  text-align: right;
-  padding-top: 1.5px;
-  display: inline;
-  clear: both;
-} */
 
 .nav-menu li:hover {
   background-color: gray;
@@ -231,15 +90,18 @@ body {
 .nav-logo {
   background-color: transparent;
   background-repeat: no-repeat;
-  background-image: url(../assets/images/apple-icons.png);
   height: 34px;
-  display: block;
-  margin: 3px auto;
+  margin: 3px auto ;
+  overflow: hidden;
+}
+
+.apple-logo {
+  margin-right: 30px;
+  transform: translate(-25px,0px);
 }
 
 .nav-logo .element {
   background-position: 50% 0px;
-
 }
 
 a {
@@ -466,186 +328,58 @@ aside {
   background-image: url(../img/supplier.jpg);
   background-position: -52px 0;
 }
-
-/* .bottom-nav {
-  position: relative;
-  display: block;
-  flex-wrap: wrap;
-  width: 980px;
-  /* margin: 0 auto; */
-  /* padding: 2px 10px 3px; */
-  /* width: 70%;
-  height: 90px;
-  padding-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 8px;
-  margin-top: 0px;
-  clear: both; */
-/* }
-
-.bottom-nav div {
-  clear: both;
-  display: inline;
-  margin: 0px;
-  float: left;
-}
-
-.bottom {
-  display: flex;
-  text-align: left;
-  margin: 0;
-  padding: 1.5em 0 0;
-  color: rgb(110, 110, 110);
-  font-size: 0.8334em;
-  line-height: 1.2;
-}
-
-.bottom a {
-  color: #08c;
-}
-
-.footer-menu { */
-  /* padding-right: 30px; */
-  /* float: right;
-  width: 57%;
-  display: flex;
-  justify-content: space-between;
-  text-align: right;
-  clear: both;
-}
-
-.footer-menu li {
-  display: flex;
-  list-style: none;
-  clear: both;
-  margin: 0px; */
-  /* width: 55%; */
-  /* float: right;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.shop-text {
-  font-size: 11px;
-  float: left;
-  display: block;
-  text-align: left;
-  padding-left: 5px;
-}
-
-.shop-text a {
-  padding: 0 4px;
-  line-height: 1.2;
-  color: #08c;
-  /* width: 46%; */ */
-
-/* style */
-/* 
-.footer {
-  grid-area: footer;
-  width: 980px;
-  justify-self: center;
-  display: flex;
-  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
-  font-size: 9px;
-  color: #6e6e6e;
-
-}
-
-.footer p:first-child { align-self: center; }
-
-.footer-menu {
-  display: flex;
-  justify-self: end;
-  align-self: center;
-  grid-template-columns: repeat(8, auto);
-  grid-column-gap: 5px;
-  align-items: center;
-}
-
-.footer-menu > * {
-  border-right: 0.5px solid #ccc;
-  padding-right: 5px;
-} */
-/* 
-.footer-menu li:last-child { border-right: none; }
-
-.footer a {
-  color: #08c;
-  text-decoration: none;
-}
-
-.footer a:hover { text-decoration: underline; } */
-
-/* abcd */
-
-.footer {
-	display: flex;
-	flex-direction: row;
-	font-size: 10px;
-	justify-items: flex-start;
-  color: gray;
-  /* width: 980px; */
-  font-size: 9px;
-  repeat: no-repeat;
+footer {
+  font-size: 10px;
   width: 100%;
-  border: none;
+  height: 90px;
+  position: relative;
 }
 
-.footer p {
-  clear: both;
-  display: inline;
-  flex: 1;
-	margin: 0;
-	margin-left: 200px;
-	box-sizing: border-box;
-  padding-top: 20px;
-  float: left;
-  width: 43%;
-  font-size: 9px;
+footer a {
+  color: blue;
 }
 
-.footer-menu {
-  justify-items: flex-start;
-	flex: 1;
-	display: flex;
-	flex-direction: row;
-	box-sizing: border-box;
-}
-
-/* .footer-menu > * {
-  border-right: 0.1px;
-  padding-right: 2px;
-} */
-
-.footer-menu li {
+.top-footer {
   display: flex;
-	list-style: none;
-  /* margin-right: 0px; */
-  margin-left: 0px;
-	color: #a2d3ec;
-  border-right: 0px solid grey;
-  padding-top: 20px;
-  float: right;
-  box-sizing: border-box;
-  /* flex: 1; */
-  text-align: right;
-  width: 51%;
-  font-size: 9px;
-  word-spacing: 0px;
+  position: relative;
+  height: 40px;
+  margin-top: 20px;
 }
-/* 
-.footer-menu li:last-child {
-  border-right: none;
-} */
 
-.bottom-footer p {
-  /* margin-right: 5px; */
-  margin-left: 200px;
-	/* padding-left: 2px; */
-  border-left: 0px solid grey;
-  clear: both;
-  padding-bottom: 20px;
-  font-size: 9px;
+.top-footer-right {
+  display: flex;
+  position: absolute;
+  right: 230px;
+  list-style: none;
 }
+
+.top-footer-right li {
+  margin-right: 5px;
+}
+
+.top-footer-right li span {
+  color: lightgrey;
+  font-size: 15px;
+
+}
+
+.top-footer-right li:last-child {
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+.top-footer p {
+  position: absolute;
+  left: 230px;
+  margin-top: 5px;
+}
+
+.bottom-footer {
+  left: 230px;
+  position: absolute;
+  margin-bottom: 20px;
+}
+
+
+
+
