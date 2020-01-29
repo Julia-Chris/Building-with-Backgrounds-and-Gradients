@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 1024px;
+  max-height: 1472px;
+  position: relative;
+  line-height: 1;
+  overflow-x: hidden;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  max-height: 540px;
+  width: 1440px;
+  margin: 0 auto;
+  z-index: 1;
+  background-size: cover;
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/couple-hiking.jpg);
+}
+
+.place-holder {
+  display: block;
+  background-color: transparent;
+  width: 1024px;
+  height: 65px;
+  margin-bottom: 82px;
+}
+
+.nav-bar {
+  margin: 0 auto;
+  width: 980px;
+  height: 36px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background:
+    linear-gradient(
+      to bottom,
+      rgb(119, 124, 120) 5%,
+      rgb(105, 105, 105) 11%,
+      rgb(100, 100, 100) 50%,
+      rgb(82, 82, 82) 51%,
+      rgb(100, 105, 101) 100%
+    );
+  border-radius: 4px;
+  position: relative;
+}
+
+.nav-bar ul {
+  background-color: transparent;
+  padding: 0;
+  width: 845px;
+  display: flex;
+  flex-direction: row;
+  float: left;
+  height: 100%;
+}
+
+.nav-bar li {
+  flex-basis: 106px;
+  text-decoration: none;
+  border-width: 0 2px 0 1px;
+  border-style: solid;
+  border-color: rgb(68, 68, 68);
+  z-index: 9999;
+  box-sizing: border-box;
+  cursor: pointer;
+  line-height: 36px;
+  margin: 1px auto;
+  text-align: center;
+  border-right: 0.5px solid gray;
+}
+
+.top-footer-right li {
+  margin-right: 5px;
+}
+
+.nav-menu li:hover {
+  background-color: gray;
+}
+
+.nav-logo {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  margin: 3px auto;
+  overflow: hidden;
+}
+
+.apple-logo {
+  margin-right: 30px;
+  transform: translate(-25px, 0);
+  margin-top: 4px;
+}
+
+.nav-logo .element {
+  background-position: 50% 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer a {
+  color: blue;
+}
+
+.nav-store a {
+  background-position: 50% -30px;
+  text-decoration-line: none;
+  color: #fff;
+  font-size: 13px;
+}
+
+.nav-mac a {
+  background-position: 50% -60px;
+  text-decoration-line: none;
+  color: #fff;
+  font-size: 13px;
+}
+
+.nav-ipod a {
+  background-position: 50% -90px;
+  text-decoration-line: none;
+  color: #fff;
+  font-size: 13px;
+}
+
+.nav-iphone a {
+  background-position: 50% -120px;
+  text-decoration-line: none;
+  color: #fff;
+  font-size: 13px;
+}
+
+.nav-ipad a {
+  background-position: 50% -150px;
+  text-decoration-line: none;
+  color: #fff;
+  font-size: 13px;
+}
+
+.nav-itunes a {
+  background-position: 50% -180px;
+  text-decoration-line: none;
+  color: #fff;
+  font-size: 13px;
+}
+
+.nav-support a {
+  background-position: 50% -210px;
+  text-decoration-line: none;
+  color: #fff;
+  font-size: 13px;
+}
+
+.search-menu {
+  background-color: transparent;
+  z-index: 1;
+  flex-basis: 109px;
+  margin-top: 8px;
+  margin-left: 13px;
+}
+
+.search-menu form {
+  display: block;
+  color: rgb(255, 255, 255);
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.0976562);
+  border-top-left-radius: 12px 12px;
+  border-top-right-radius: 12px 12px;
+  border-bottom-right-radius: 12px 12px;
+  border-bottom-left-radius: 12px 12px;
+  box-shadow:
+    rgba(0, 0, 0, 0.597656) 0 2px 1px inset,
+    rgba(255, 255, 255, 0.199219) 0 1px 0;
+  z-index: 0;
+  -webkit-box-shadow:
+    rgba(0, 0, 0, 0.398438) 0 -1px 0,
+    rgba(255, 255, 255, 0.199219) 0 1px 0;
+  border-width: 0;
+  border-style: none;
+  margin: 1px 0 0;
+  padding: 0;
+  border-color: white;
+}
+
+.search-menu form input {
+  color: #fff;
+  background-color: transparent;
+  width: 100%;
+  height: 14px;
+  background-image: none;
+  border-top-left-radius: 12px 12px;
+  border-top-right-radius: 12px 12px;
+  border-bottom-right-radius: 12px 12px;
+  border-bottom-left-radius: 12px 12px;
+  box-sizing: border-box;
+  border: 2px;
+  border-width: 0;
+  border-color: #fff;
+  cursor: text;
+  font: 400 11px system-ui;
+  text-align: center;
+}
+
+.magnifier-box {
+  position: absolute;
+}
+
+.magnifier-box span {
+  position: absolute;
+  width: 18px;
+  height: 11px;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGJhc2VQcm9maWxlPSJmdWxsIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWxuczpldj0iaHR0cDovL3d3dy53My5vcmcvMjAwMS94bWwtZXZlbnRzIj4KPGcgZmlsbC1vcGFjaXR5PSIuNSI+Cgk8cG9seWdvbiBwb2ludHM9IjkuMjA3LDcuMTI2IDcuNzkzLDguNTQxIDExLjc5MywxMi41NDEgMTMuMjA3LDExLjEyNiIgLz4KCTxwYXRoIGQ9Ik01LjkxNywzYzEuNjA4LDAsMi45MTcsMS4zMDgsMi45MTcsMi45MTdTNy41MjUsOC44MzMsNS45MTcsOC44MzNTMyw3LjUyNSwzLDUuOTE3UzQuMzA4LDMsNS45MTcsMyBNNS45MTcsMQoJCUMzLjIwMSwxLDEsMy4yMDEsMSw1LjkxN3MyLjIwMSw0LjkxNyw0LjkxNyw0LjkxN3M0LjkxNy0yLjIwMSw0LjkxNy00LjkxN0MxMC44MzMsMy4yMDEsOC42MzIsMSw1LjkxNywxTDUuOTE3LDF6IiAvPgo8L2c+CjxnPgoJPHBvbHlnb24gZmlsbD0iI2ZmZiIgcG9pbnRzPSI5LjIwNyw2LjEyNiA3Ljc5Myw3LjU0MSAxMS43OTMsMTEuNTQxIDEzLjIwNywxMC4xMjYiIC8+Cgk8cGF0aCBmaWxsPSIjZmZmIiBkPSJNNS45MTcsMmMxLjYwOCwwLDIuOTE3LDEuMzA4LDIuOTE3LDIuOTE3UzcuNTI1LDcuODMzLDUuOTE3LDcuODMzUzMsNi41MjUsMyw0LjkxN1M0LjMwOCwyLDUuOTE3LDIKCQkgTTUuOTE3LDBDMy4yMDEsMCwxLDIuMjAxLDEsNC45MTdzMi4yMDEsNC45MTcsNC45MTcsNC45MTdzNC45MTctMi4yMDEsNC45MTctNC45MTdDMTAuODMzLDIuMjAxLDguNjMyLDAsNS45MTcsMEw1LjkxNywweiIgLz4KPC9nPgo8L3N2Zz4K");
+  background-repeat: no-repeat;
+  margin-left: 4px;
+  margin-top: 5px;
+  text-align: center;
+  bottom: 2.5px;
+  left: 2px;
+}
+
+.header-text {
+  margin: 28px 0 0;
+  padding: 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header h1 {
+  margin: 0 0 -9px;
+  padding: 0;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+header div img {
+  height: 64px;
+  width: 980px;
+}
+
+header h1 a img {
+  height: 104px;
+  width: 980px;
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  border-width: 0;
+  border-style: none;
+  border-color: white;
+}
+
+header h2 {
+  margin: 0 0 27px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 18px;
+  font-style: normal;
+  text-decoration: none;
+  font-family: "Lato", Helvetica, sans-serif;
+}
+
+header h2 a img {
+  height: 82px;
+  width: 980px;
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  border-width: 0;
+  border-style: none;
+  border-color: white;
+}
+
+header div {
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 31px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+aside {
+  margin-top: 157px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.iphone5s {
+  display: block;
+  max-width: 25%;
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+  background-image: url(../img/iphone5S.jpg);
+  background-position: -52px 0;
+}
+
+.iphone5c {
+  display: block;
+  height: auto;
+  max-width: 25%;
+  width: 100%;
+  background-color: transparent;
+  background-image: url(../img/iphone5C.jpg);
+  background-position: -52px 0;
+}
+
+.happy {
+  display: block;
+  height: auto;
+  max-width: 25%;
+  width: 50%;
+  background-color: transparent;
+  background-image: url(../img/happybirthday.jpg);
+  background-position: -52px 0;
+}
+
+.supplier {
+  display: block;
+  max-width: 25%;
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+  background-image: url(../img/supplier.jpg);
+  background-position: -52px 0;
+}
+
+footer {
+  font-size: 10px;
+  width: 100%;
+  height: 90px;
+  position: relative;
+}
+
+.top-footer {
+  display: flex;
+  position: relative;
+  height: 40px;
+  margin-top: 20px;
+}
+
+.top-footer-right {
+  display: flex;
+  position: absolute;
+  right: 230px;
+  list-style: none;
+}
+
+.top-footer-right li span {
+  color: lightgrey;
+  font-size: 15px;
+}
+
+.top-footer-right li:last-child {
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+.top-footer p {
+  position: absolute;
+  left: 230px;
+  margin-top: 5px;
+}
+
+.bottom-footer {
+  left: 230px;
+  position: absolute;
+  margin-bottom: 20px;
+}
