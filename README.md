@@ -26,7 +26,7 @@ GitHub
 
 Visual Studio Code
 
-Live Demo  https://motivatej.github.io/Building-with-Backgrounds-and-Gradients/
+Live Demo:  https://raw.githack.com/MotivateJ/Building-with-Backgrounds-and-Gradients/apple-clone/index.html
 
 
 Getting Started
