@@ -9,6 +9,7 @@ body {
   max-height: 1472px;
   position: relative;
   line-height: 1;
+  overflow-x: hidden;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
